@@ -27,7 +27,7 @@ public class FlutterPluginDemoPlugin implements FlutterPlugin, MethodCallHandler
 
   @Override
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
-    if (call.method.equals("getPlatformVersion")) {
+    if (call.method.equals("getContactList")) {
       List<String> deviceList = new ArrayList<>();
       deviceList.add("Contact X");
       deviceList.add("Contact Y");

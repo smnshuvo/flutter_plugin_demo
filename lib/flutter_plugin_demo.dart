@@ -8,11 +8,11 @@ class FlutterPluginDemo {
   static const MethodChannel _channel = MethodChannel('flutter_plugin_demo');
 
   static Future<List<String>?> get nameList async {
-    final List<Object?> version = await _channel.invokeMethod('getPlatformVersion');
+    final List<Object?> version = await _channel.invokeMethod('getContactList');
     List<String> nameList = <String>[];
-    version.forEach((element) {
+    for (var element in version) {
       nameList.add(element as String);
-    });
+    }
     return nameList;
   }
 }
