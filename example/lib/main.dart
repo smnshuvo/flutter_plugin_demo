@@ -60,7 +60,7 @@ class _MyAppState extends State<MyApp> {
               itemBuilder: (context, index) => Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  const Icon(Icons.ac_unit),
+                  const Icon(Icons.contact_phone_rounded),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(_contactList[index]),
